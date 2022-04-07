@@ -7,6 +7,7 @@ nav {
     background: #333;
 
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 50%;
     transform: translate(-50%);
