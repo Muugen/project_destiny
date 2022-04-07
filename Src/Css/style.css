@@ -32,9 +32,11 @@ body {
 /* --- HEADER --- */
 
 header {
-    background-image: url('../Ressources/Images/homeBg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: url('../../Assets/Images/homeBg.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
 }

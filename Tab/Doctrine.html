@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Doctrine</title>
-    <link rel="icon" type="image/png" href="../Ressources/Images/DestinyIcon.png" />
-    <link rel="stylesheet" href="../Css/Doctrine.css">
-    <link rel="stylesheet" href="../Css/nav.css">
+
+    <script src="https://kit.fontawesome.com/2c9651bccf.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="../Assets/Images/DestinyIcon.png" />
+    <link rel="stylesheet" href="../Src/Css/Doctrine.css">
+    <link rel="stylesheet" href="../Src/Css/nav.css">
 </head>
 
 <body>
@@ -30,27 +35,39 @@
                     échangées à tout moment selon les situations.</p>
             </div>
             <div class="button">
-                <a href="../Tab/Doctrine/Arcaniste.html"><img src="../Ressources/Images/DoctrineArcanist.png" /></a>
-                <a href="../Tab/Doctrine/Chasseur.html"><img src="../Ressources/Images/DoctrineChasseur.png" /></a>
-                <a href="../Tab/Doctrine/Titan.html"><img src="../Ressources/Images/DoctrineTitan.png" /></a>
+                <a href="../Tab/Doctrine/Arcaniste.html"><img src="../Assets/Images/DoctrineArcanist.png" /></a>
+                <a href="../Tab/Doctrine/Chasseur.html"><img src="../Assets/Images/DoctrineChasseur.png" /></a>
+                <a href="../Tab/Doctrine/Titan.html"><img src="../Assets/Images/DoctrineTitan.png" /></a>
             </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="Doctrine.html">Doctrine</a>
-                <ul class="hide">
-                    <li><a href="./Doctrine/Arcaniste.html">Arcaniste</a></li>
-                    <li><a href="./Doctrine/Chasseur.html">Chasseur</a></li>
-                    <li><a href="./Doctrine/Titan.html">Titan</a></li>
-                </ul>
-            </li>
-            <li><a href="./Histoire.html">Histoire</a></li>
-            <li><a href="./Equipement.html">Equipement</a></li>
-            <li><a href="./Quetes.html">Quêtes</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo">
+                <img src="../Assets/Images/#" alt="Logo destiny" />
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="./Doctrine.html">Doctrine</a>
+                    <ul class="hide">
+                        <li><a href="./Doctrine/Arcaniste.html">Arcaniste</a></li>
+                        <li><a href="./Doctrine/Chasseur.html">Chasseur</a></li>
+                        <li><a href="./Doctrine/Titan.html">Titan</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Histoire.html">Histoire</a></li>
+                <li><a href="./Equipement.html">Equipement</a></li>
+                <li><a href="./Quetes.html">Quêtes</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
+    <script src="../Src/Js/nav.js"></script>
 </body>
 
 </html>
