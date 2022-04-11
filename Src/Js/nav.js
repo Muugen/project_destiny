@@ -1,23 +1,24 @@
-/* ========== Nav phone ========== */
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li')
 
-const body = document.querySelector("body");
-const navbar = document.querySelector(".navbar");
-const menuBtn = document.querySelector(".menu-btn");
-const cancelBtn = document.querySelector(".cancel-btn");
-menuBtn.onclick = () => {
-    navbar.classList.add("show");
-    menuBtn.classList.add("hide");
-    body.classList.add("disabled");
-}
+burger.addEventListener('click', () => {
 
-cancelBtn.onclick = () => {
-    body.classList.remove("disabled");
-    navbar.classList.remove("show");
-    menuBtn.classList.remove("hide");
-}
+    //Toggle nav
+    nav.classList.toggle('nav-active');
+    
+    //Animated links
+    navLinks.forEach((link, index) => {
+        if(link.style.animation){
+            link.style.animation = '';
+        }
+        else{
+            link.style.animation = `navLinkFade 0.5 ease forwards ${index / 7 + 3}s`;
+        }
+    })
 
-/* ========== Nav sticky top ========== */
+    //Burger animation
+    burger.classList.toggle('toggle');
+    
+});
 
-window.onscroll = () => {
-    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-}

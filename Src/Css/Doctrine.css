@@ -43,6 +43,7 @@ header {
 
 .card {
     padding-top: 5%;
+    background-color: transparent;
 }
 
 .text {
