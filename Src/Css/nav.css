@@ -9,62 +9,35 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 8vh;
-  background-color: #333333;
+
+  background-color: #333;
+  color: white;
 }
 
 .logo {
-  color: white;
+  color: rgb(226, 226, 226);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
-  height: 100%;
+  width: 50%;
 }
 
-
 .nav-links li {
-  display: grid;
-  align-content: center;
   list-style: none;
 }
 
-.nav-links li a {
-  display: block;
+.nav-links a {
+  color: rgb(226, 226, 226);
   text-decoration: none;
-  color: white;
-  height: 100%;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
-
-.nav-links li a:hover {
-  color: red;
-}
-
-/* Nav other tab */
-
-nav ul ul{
-  position: absolute;
-  top: 60px;
-  display: none;
-}
-
-nav ul li:hover > ul{
-  display: block;
-}
-
-nav ul ul li{
-  padding: 2.5%;
-  width: 100px;
-  height: 50px;
-  float: none;
-  display: list-item;
-  position: relative;
-
-  background-color: #333333;
-}
-
-/* Burger */
 
 .burger {
   display: none;
@@ -74,16 +47,10 @@ nav ul ul li{
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: rgb(226, 226, 226);
   margin: 5px;
   border-radius: 50px;
   transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1450px) {
-  .nav-links {
-    width: 50%;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -92,25 +59,23 @@ nav ul ul li{
   }
 }
 
-
 @media screen and (max-width: 768px) {
-  .body {
-    overflow-x: hidden;
+  html {
+    overflow-x: hidden !important;
   }
 
   .nav-links {
     position: absolute;
-    right: 0;
-    height: 92vh;
-    /* fullscreen 92 + 8vh = 100vh */
+    right: 0px;
     top: 8vh;
-    background-color: #333333;
+    height: 92vh;
+    width: 100%;
+    background-color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transform: translateX(-200%);
+    transition: transform 1s;
   }
 
   .nav-links li {
@@ -129,7 +94,7 @@ nav ul ul li{
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(-50px);
   }
 
   to {

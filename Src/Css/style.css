@@ -21,11 +21,15 @@
     border-radius: 10px;
 }
 
+html{
+    overflow-x: hidden !important;
+}
+
 /* --- BODY --- */
 
 body {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Fira code', Courier, monospace;
 }
 
@@ -78,8 +82,7 @@ main {
 
 #mainVideo {
     margin-top: 15%;
-
-    width: auto;
+    width: 850px;
     height: 500px;
 }
 
@@ -92,7 +95,6 @@ main {
 
 #mainText {
     margin-top: 15%;
-
     height: 390px;
     width: 950px;
     display: grid;

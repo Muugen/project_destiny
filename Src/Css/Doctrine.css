@@ -102,10 +102,6 @@ section {
     font-size: 18px;
 }
 
-.post-it-title h1::before, h1::after {
-    content: " ---- ";
-}
-
 .post-it-title {
     margin: 5%;
 }
