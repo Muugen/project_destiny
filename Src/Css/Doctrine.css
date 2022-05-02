@@ -27,6 +27,7 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
     font-family: 'Fira code', Courier, monospace;
+    background-color: #333;
 }
 
 /* --- HEADER --- */
@@ -39,6 +40,12 @@ header {
     background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+
+.redDot{
+    color: red;
+    position: absolute;
+    z-index: 1;
 }
 
 .card {
@@ -57,6 +64,11 @@ header {
 
 .button {
     text-align: center;
+}
+
+.button img{
+    width: 250px;
+    height: auto;
 }
 
 /* --- MAIN --- */
@@ -307,4 +319,24 @@ section {
     left: 80vw;
     transform: translate(-50%, -50%);
     padding: 2%;
+}
+
+/* --- Button Doctrine --- */
+
+.buttonClasses{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonClasses span{
+    font-size: 50px;
+}
+
+.buttonClasses a{
+    margin: 2%;
 }

@@ -23,12 +23,12 @@
 
 html{
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
 }
 
 /* --- BODY --- */
 
 body {
-    scroll-behavior: smooth;
     overflow-x: hidden !important;
     font-family: 'Fira code', Courier, monospace;
 }
